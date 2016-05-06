@@ -1,0 +1,38 @@
+!SESSION 2016-05-06 09:35:48.188 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_31
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data G:\MinecraftMod\Forge -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-05-06 09:36:55.587
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\JULIA'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-05-06 09:37:45.445
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.apache.lucene.store.AlreadyClosedException: this Directory is closed
+	at org.apache.lucene.store.Directory.ensureOpen(Directory.java:288)
+	at org.apache.lucene.store.FSDirectory.createOutput(FSDirectory.java:303)
+	at org.apache.lucene.store.Directory.copy(Directory.java:232)
+	at org.apache.lucene.index.IndexWriter.copySegmentAsIs(IndexWriter.java:3331)
+	at org.apache.lucene.index.IndexWriter.addIndexes(IndexWriter.java:3159)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.replaceContent(ProblemsDatabaseService.java:175)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+	Suppressed: org.apache.lucene.store.AlreadyClosedException: this Directory is closed
+		at org.apache.lucene.store.Directory.ensureOpen(Directory.java:288)
+		at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:331)
+		at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4588)
+		at org.apache.lucene.index.IndexWriter.prepareCommit(IndexWriter.java:3453)
+		at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:3524)
+		at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:1879)
+		at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1822)
+		at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1786)
+		at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.replaceContent(ProblemsDatabaseService.java:177)
+		... 2 more
