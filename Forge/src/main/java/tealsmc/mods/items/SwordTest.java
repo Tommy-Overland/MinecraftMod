@@ -6,8 +6,7 @@ import net.minecraft.item.ItemSword;
 public class SwordTest extends ItemSword {
 
 	public SwordTest(UpgradedStick s, SwordBlade b) {
-		
-		super(ItemsModule.mat.m);
+		super(Item.ToolMaterial.IRON);
 		
 		// TODO Auto-generated constructor stub
 	}
