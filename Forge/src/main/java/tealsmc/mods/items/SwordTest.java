@@ -7,8 +7,6 @@ public class SwordTest extends ItemSword {
 
 	public SwordTest(UpgradedStick s, SwordBlade b) {
 		super(ItemsModule.mat.m);
-		
-		// TODO Auto-generated constructor stub
 	}
 
 }
